@@ -1,0 +1,477 @@
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:1024px){
+
+body{
+
+    min-width:100%;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header{
+
+    padding:18px;
+
+    display:grid;
+
+    grid-template-columns:60px 1fr auto;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+/* скрываем обычное меню */
+
+nav{
+
+    display:none;
+
+}
+
+/* гамбургер */
+
+/* ==========================================
+   BURGER
+========================================== */
+
+.burger{
+
+    font-size:34px;
+
+    color:#32ff5d;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+nav{
+
+    display:none;
+
+}
+
+nav.mobile-open{
+
+    display:flex;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:80px;
+
+    left:20px;
+
+    right:20px;
+
+    background:#0d0d0d;
+
+    border:2px solid #32ff5d;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    gap:18px;
+
+    z-index:100;
+
+}
+
+nav.mobile-open a{
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    justify-content:center;
+
+}
+
+.logo-placeholder{
+
+    width:220px;
+
+    height:110px;
+
+    font-size:24px;
+
+}
+
+/* ==========================================
+   BUY BUTTON
+========================================== */
+
+.desktop-buy{
+
+    padding:10px 16px;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:25px;
+
+}
+
+/* ==========================================
+   DOOM
+========================================== */
+
+.left-side{
+
+    order:2;
+
+    justify-content:center;
+
+}
+
+.doom-placeholder{
+
+    width:260px;
+
+    height:420px;
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+   CENTER
+========================================== */
+
+.center-side{
+
+    order:1;
+
+}
+
+.powered{
+
+    font-size:16px;
+
+    letter-spacing:3px;
+
+    text-align:center;
+
+}
+
+.powered::before,
+
+.powered::after{
+
+    display:none;
+
+}
+
+.center-side h1{
+
+    text-align:left;
+
+    font-size:58px;
+
+    margin-top:12px;
+
+}
+
+.center-side h2{
+
+    font-size:22px;
+
+    line-height:1.45;
+
+}
+
+.center-side p{
+
+    width:100%;
+
+    font-size:18px;
+
+    line-height:1.75;
+
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.info-box{
+
+    grid-template-columns:1fr;
+
+    margin-top:28px;
+
+}
+
+.info-box div{
+
+    border-right:none;
+
+    border-bottom:1px solid #14371b;
+
+}
+
+.info-box div:last-child{
+
+    border-bottom:none;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.buy-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+}
+
+/* ==========================================
+   SOCIALS
+========================================== */
+
+.socials{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.socials a{
+
+    width:56px;
+
+    height:56px;
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.right-side{
+
+    order:3;
+
+}
+
+.chart{
+
+    height:260px;
+
+}
+
+.prices{
+
+    margin-top:18px;
+
+}
+
+.prices h3{
+
+    text-align:center;
+
+}
+
+.prices li{
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    margin:35px 20px;
+
+}
+
+.stats div{
+
+    border-right:none;
+
+    border-bottom:1px solid #18381f;
+
+}
+
+.stats div:nth-child(odd){
+
+    border-right:1px solid #18381f;
+
+}
+
+.stats div:nth-last-child(-n+2){
+
+    border-bottom:none;
+
+}
+
+.stats h3{
+
+    font-size:34px;
+
+}
+
+.stats p{
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   ADS
+========================================== */
+
+.top-ad,
+
+.side-ad,
+
+.bottom-ad{
+
+    width:100%;
+
+    min-height:70px;
+
+}
+
+/* ==========================================
+   NOTIFICATION
+========================================== */
+
+.notification-box{
+
+    width:90vw;
+
+    height:40vh;
+
+    font-size:42px;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width:480px){
+
+.logo-placeholder{
+
+    width:170px;
+
+    height:90px;
+
+    font-size:18px;
+
+}
+
+.center-side h1{
+
+    font-size:46px;
+
+}
+
+.center-side h2{
+
+    font-size:18px;
+
+}
+
+.center-side p{
+
+    font-size:16px;
+
+}
+
+.doom-placeholder{
+
+    width:220px;
+
+    height:360px;
+
+}
+
+.buy-btn{
+
+    font-size:16px;
+
+}
+
+.prices li{
+
+    font-size:15px;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats div{
+
+    border-right:none !important;
+
+    border-bottom:1px solid #18381f;
+
+}
+
+.stats div:last-child{
+
+    border-bottom:none;
+
+}
+
+.notification-box{
+
+    font-size:34px;
+
+}
+
+}
+
+}

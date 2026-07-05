@@ -1,0 +1,698 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#050505;
+    color:#fff;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+/* ===================================
+   BACKGROUND
+=================================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-10;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(38,255,96,.12), transparent 22%),
+        radial-gradient(circle at 80% 30%, rgba(38,255,96,.08), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(38,255,96,.06), transparent 35%),
+        linear-gradient(180deg,#050505,#090909,#050505);
+
+    overflow:hidden;
+}
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+        radial-gradient(circle,#ffffff 1px,transparent 1px);
+
+    background-size:70px 70px;
+
+    opacity:.18;
+
+}
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(34,255,92,.04) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(34,255,92,.04) 1px,transparent 1px);
+
+    background-size:120px 120px;
+
+}
+
+/* ===================================
+   LINKS
+=================================== */
+
+a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+a:hover{
+
+    color:#32ff5d;
+
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.header{
+
+    width:100%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px 40px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo-placeholder{
+
+    width:320px;
+
+    height:150px;
+
+    border:2px dashed #ff5555;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    color:#ff4444;
+
+    letter-spacing:2px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+nav a{
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.buy-btn{
+
+    background:#111;
+
+    color:white;
+
+    border:2px solid #2cff57;
+
+    padding:16px 34px;
+
+    cursor:pointer;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 0 15px rgba(50,255,90,.35);
+
+}
+
+.buy-btn:hover{
+
+    background:#1a1a1a;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 0 25px rgba(50,255,90,.7);
+
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+    width:100%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+        360px
+        1fr
+        320px;
+
+    gap:40px;
+
+    padding:20px 40px 50px;
+
+}
+
+/* ===================================
+   LEFT
+=================================== */
+
+.left-side{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.doom-placeholder{
+
+    width:340px;
+
+    height:720px;
+
+    border:2px dashed #32ff5d;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#2cff57;
+
+    font-size:24px;
+
+}
+
+/* ===================================
+   CENTER
+=================================== */
+
+.powered{
+
+    color:#32ff5d;
+
+    font-size:20px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.center-side h1{
+
+    font-size:72px;
+
+    margin-bottom:10px;
+
+}
+
+.center-side h2{
+
+    color:#32ff5d;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+
+}
+
+.center-side p{
+
+    color:#d0d0d0;
+
+    line-height:1.8;
+
+    font-size:19px;
+
+    max-width:650px;
+
+}
+
+/* ===================================
+   INFO
+=================================== */
+
+.info-box{
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    border:2px solid #27ff59;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.info-box div{
+
+    padding:18px;
+
+    border-right:1px solid #11441d;
+
+}
+
+.info-box div:last-child{
+
+    border-right:none;
+
+}
+
+.info-box span{
+
+    display:block;
+
+    color:#4cff6b;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+.info-box strong{
+
+    font-size:18px;
+
+}
+
+/* ===================================
+   SOCIALS
+=================================== */
+
+.socials{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:28px;
+
+}
+
+.socials a{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:50%;
+
+    border:2px solid #32ff5d;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:12px;
+
+}
+
+/* ===================================
+   RIGHT
+=================================== */
+
+.chart{
+
+    height:320px;
+
+    border:2px solid #a51616;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#888;
+
+    margin-bottom:25px;
+
+}
+
+.prices{
+
+    border:2px solid #2cff57;
+
+    border-radius:10px;
+
+    padding:25px;
+
+}
+
+.prices h3{
+
+    color:#32ff5d;
+
+    margin-bottom:18px;
+
+}
+
+.prices ul{
+
+    list-style:none;
+
+}
+
+.prices li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #111;
+
+    color:#d5d5d5;
+
+}
+
+/* ===================================
+   STATS
+=================================== */
+
+.stats{
+
+    width:100%;
+
+    max-width:1500px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    border:2px solid #2cff57;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.stats div{
+
+    padding:35px;
+
+    text-align:center;
+
+    border-right:1px solid #16361d;
+
+}
+
+.stats div:last-child{
+
+    border-right:none;
+
+}
+
+.stats h3{
+
+    font-size:42px;
+
+    color:#30ff5f;
+
+    margin-bottom:10px;
+
+}
+
+.stats p{
+
+    color:#cfcfcf;
+
+    letter-spacing:2px;
+
+}
+
+/* ===================================
+   ADS
+=================================== */
+
+.ad-banner,
+.bottom-ad{
+
+    margin-top:30px;
+
+    border:1px dashed #2cff57;
+
+    border-radius:10px;
+
+    color:#32ff5d;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:90px;
+
+    opacity:.65;
+
+}
+
+/*
+======================================
+
+Replace this block with your ad code
+
+<!-- Ad Banner -->
+
+======================================
+*/
+
+/* ===================================
+   NOTIFICATION
+=================================== */
+
+#notification{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+#notification.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.notification-box{
+
+    width:min(700px,85vw);
+
+    height:min(45vh,320px);
+
+    border:2px solid #32ff5d;
+
+    background:#0b0b0b;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:56px;
+
+    color:#32ff5d;
+
+    box-shadow:0 0 40px rgba(50,255,90,.4);
+
+}
+
+/* ===================================
+   UTILITIES
+=================================== */
+
+.desktop-buy{
+
+    display:block;
+
+}
+
+.mobile-only{
+
+    display:none;
+
+}
+.info-box,
+.stats,
+.prices{
+
+    backdrop-filter:blur(14px);
+
+    background:rgba(0,0,0,.35);
+
+}
+.buy-btn{
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+.chart svg{
+
+width:100%;
+height:100%;
+
+}
+
+.chart{
+
+padding:20px;
+
+}
+.doom-image{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.doom-image img{
+
+width:100%;
+
+max-width:360px;
+
+height:auto;
+
+display:block;
+
+}
+.logo img{
+
+width:100%;
+
+max-width:330px;
+
+height:auto;
+
+display:block;
+
+}
